@@ -1,102 +1,69 @@
 
-#🎬 NetReview
+NetReview
 A sleek and modern React application to explore movies and watch trailers seamlessly. NetReview integrates with movie APIs and YouTube to provide an immersive movie browsing experience.
 
 🚀 Project Overview
-NetReview is a dynamic movie review platform built using React. It fetches real-time movie details and trailers by integrating with third-party APIs like The Movie Database (TMDb) and YouTube.
+NetReview is a dynamic movie review platform built with React. It fetches real-time movie details and trailers by integrating third-party APIs, including YouTube for video trailers. The app features:
 
-🌟 Features
-🎥 Browse popular and trending movies
-
-📄 View detailed movie information (cast, synopsis, ratings)
-
-▶️ Watch trailers via embedded YouTube player
-
-🔍 Search movies by title
-
-💻 Smooth navigation with React Router
-
-📱 Responsive and user-friendly design
-
+Browse popular and trending movies
+Detailed movie information (cast, synopsis, ratings)
+Watch trailers directly inside the app via embedded YouTube videos
+Smooth navigation with React Router
+Responsive and user-friendly UI using React libraries
 🛠️ Built With
-React – For building the UI
-
-React Router DOM – For SPA-style routing
-
-Axios – For making API requests
-
-React-YouTube – For embedding trailers
-
-Tailwind CSS (optional) – For modern styling
-
-Vite – For fast builds and hot reloading
-
-⚙️ Getting Started
-✅ Prerequisites
-Node.js v14 or higher
-
+React – Frontend framework for building user interfaces
+React Router DOM – For client-side routing
+Axios – HTTP client to fetch movie data from external APIs
+YouTube API / React YouTube library – To embed and play movie trailers
+Tailwind CSS (optional if used) – For styling components
+Vite – Development server and build tool
+⚙️ Features
+Movie Listing: View a list of movies fetched from a public movie database API
+Movie Details: Access detailed information about each movie
+Trailer Integration: Watch official trailers via embedded YouTube player
+Search Functionality: Quickly find movies by title
+Responsive Design: Mobile-friendly and optimized for all screen sizes
+🎯 Getting Started
+Prerequisites
+Node.js installed (v14 or above recommended)
 npm or yarn package manager
-
-📦 Installation
-bash
-Copy
-Edit
+Installation
+Clone the repository:
 git clone https://github.com/vinay1506/netreview.git
 cd netreview
-npm install
-🔑 Add API Keys
-Create a .env file in the root directory:
 
-env
-Copy
-Edit
-REACT_APP_MOVIE_API_KEY=your_movie_db_api_key_here
-REACT_APP_YOUTUBE_API_KEY=your_youtube_api_key_here
-▶️ Run the App
-bash
-Copy
-Edit
-npm run dev
-Visit http://localhost:5173 in your browser.
+Install dependencies:
+bash Copy Edit npm install Add API keys: Create a .env file in the root directory with your API keys:
 
-🔗 API Integrations
-TMDb API – Fetches movies, ratings, cast, and more.
+env Copy Edit REACT_APP_MOVIE_API_KEY=your_movie_db_api_key_here REACT_APP_YOUTUBE_API_KEY=your_youtube_api_key_here Start the development server:
 
-YouTube API – Embeds official trailers via React-YouTube.
+bash Copy Edit npm run dev Open the app: Visit http://localhost:5173 in your browser.
 
-🖼️ Screenshots (Replace with actual images)
-Movie Listings	Movie Details	Watch Trailer
+🔗 API Integration Movie Database API: Provides movie details such as titles, descriptions, ratings, and cast information. (e.g., The Movie Database (TMDb))
 
-🤝 Contributing
-Contributions, issues, and feature requests are welcome!
+YouTube API: Enables embedding and playback of movie trailers inside the app through the React YouTube library.
 
-🛠 Steps to Contribute:
-bash
-Copy
-Edit
-# 1. Fork the repository
-# 2. Create a feature branch
-git checkout -b feature/YourFeature
+🖼️ Screenshots
 
-# 3. Commit changes
-git commit -m "Add some feature"
+Browse through popular movies with detailed thumbnails.
 
-# 4. Push to GitHub
-git push origin feature/YourFeature
+Detailed view including synopsis, cast, and ratings.
 
-# 5. Open a pull request
-📫 Contact
-Created by Vinay — feel free to reach out via GitHub for feedback or collaboration.
+Watch trailers embedded via YouTube.
 
-Live Preview: 🌐 lovely-lokum-e72d03.netlify.app
+(Replace these screenshots with your actual images in the /screenshots folder.)
 
-📁 Project Status
-✅ MVP Complete
+🤝 Contributing Contributions, issues, and feature requests are welcome! Feel free to:
 
-⏳ Open for Enhancements
+Fork the repository
 
-🐛 Bug Reports Welcome
+Create a new branch (git checkout -b feature/YourFeature)
 
-📜 License
-This project is licensed under the MIT License — free to use and modify.
+Commit your changes (git commit -m 'Add some feature')
+
+Push to the branch (git push origin feature/YourFeature)
+
+Open a pull request.
+
+📫 Contact Created by Vinay — reach out via GitHub
 
