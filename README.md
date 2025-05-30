@@ -1,4 +1,5 @@
-🎬 NetReview
+
+#🎬 NetReview
 A sleek and modern React application to explore movies and watch trailers seamlessly. NetReview integrates with movie APIs and YouTube to provide an immersive movie browsing experience.
 
 🚀 Project Overview
