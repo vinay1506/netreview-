@@ -50,3 +50,55 @@ NetReview is a dynamic movie review platform built with **React**. It fetches re
    ```bash
    git clone https://github.com/vinay1506/netreview.git
    cd netreview
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Add API keys:
+Create a .env file in the root directory with your API keys:
+
+env
+Copy
+Edit
+REACT_APP_MOVIE_API_KEY=your_movie_db_api_key_here
+REACT_APP_YOUTUBE_API_KEY=your_youtube_api_key_here
+Start the development server:
+
+bash
+Copy
+Edit
+npm run dev
+Open the app:
+Visit http://localhost:5173 in your browser.
+
+🔗 API Integration
+Movie Database API: Provides movie details such as titles, descriptions, ratings, and cast information. (e.g., The Movie Database (TMDb))
+
+YouTube API: Enables embedding and playback of movie trailers inside the app through the React YouTube library.
+
+🖼️ Screenshots
+
+Browse through popular movies with detailed thumbnails.
+
+
+Detailed view including synopsis, cast, and ratings.
+
+
+Watch trailers embedded via YouTube.
+
+(Replace these screenshots with your actual images in the /screenshots folder.)
+
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to:
+
+Fork the repository
+
+Create a new branch (git checkout -b feature/YourFeature)
+
+Commit your changes (git commit -m 'Add some feature')
+
+Push to the branch (git push origin feature/YourFeature)
+
+Open a pull request
