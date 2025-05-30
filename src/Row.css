@@ -1,0 +1,53 @@
+.row__title{
+    color: rgb(246, 246, 246);
+    background-color: black;
+}
+.row__posters {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.row__poster {
+    width: 180px; /* Adjust the width of each poster as needed */
+    margin-right: 15px; /* Adjust the spacing between posters */
+    object-fit: contain;
+    transition: transform 0.3s; /* Add transition for smoother animation */
+    opacity: 0.85;
+}
+
+.row__poster:hover {
+    transform: scale(1.1); /* Scale the poster by 10% on hover */
+    opacity: 1;
+    cursor: pointer;
+}
+
+.closeButton{
+    width: 250px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgb(227, 31, 31);
+    border-radius: 180px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-right: 1rem; /* Adjust the margin as needed */
+    transition: background-color 0.3s ease;
+    opacity: 0..95;
+    transition: transform 0.3s;
+}
+
+.closeButton:hover{
+         transform: scale(1.05);
+         opacity: 1;
+}
+
+
+

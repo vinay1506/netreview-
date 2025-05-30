@@ -1,0 +1,280 @@
+/* App styles */
+.App {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;  /* Disable horizontal scrollbar */
+}
+
+/* Navbar styles */
+/* Navbar Container */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar Logo */
+.nav__logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Navbar Links */
+.nav__links {
+  display: flex;
+  gap: 20px; /* Space between links */
+  margin-left: -750px;
+}
+
+.nav__link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav__link:hover {
+  color: rgba(246, 30, 30, 0.8); /* Red color on hover */
+  transform: scale(1.1);
+}
+
+/* Navbar Avatar */
+.nav__avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* When scrolling, add a background to the navbar */
+.nav.scrolled {
+  background-color: #141414; /* Dark background when scrolled */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none; /* Hide links on smaller screens */
+  }
+
+  .nav__logo {
+    flex: 1;
+  }
+
+  /* Add a hamburger menu or other mobile-specific styling if needed */
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav__logo {
+  width: 100px;  /* Adjusted size for logo */
+  object-fit: contain;
+}
+
+.nav__avatar {
+  width: 40px;  /* Adjusted size for avatar */
+  height: 40px;  /* Ensure the avatar is square */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.nav__avatar:hover {
+  transform: scale(1.2);
+}
+
+/* Banner styles */
+.banner {
+  position: relative;
+  height: 448px;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 140px 30px 30px;
+}
+
+.banner__contents {
+  max-width: 600px;
+  margin-left: 30px;
+}
+
+.banner__title {
+  font-size: 4rem;
+    font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 60px;
+}
+
+.banner__buttons {
+  margin-top: 1rem;
+}
+
+.banner__button {
+  font-size: 1.2rem;
+  padding: 10px 50px;
+  color: rgb(0, 0, 0);
+  background-color: #f4f1f1;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.banner__button:hover {
+  background-color: #f40612;
+  color: aliceblue;
+}
+
+.banner__description {
+  font-size: 1.5rem;
+  max-width: 750px;
+  margin-top: 40px;
+}
+
+.banner__fadeBottom {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  height: 20%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+/* Row styles */
+.row {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.row__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar for Chrome/Safari */
+}
+
+/* First row posters */
+.row__poster {
+  width: 200px;  /* Adjusted width for rectangular posters */
+  height: 300px;  /* Set height for rectangular posters */
+  object-fit: cover;  /* Changed from contain to cover for better visual quality */
+  margin-right: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;  /* Changed cursor to pointer for posters */
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+/* Second row posters - Reverting to horizontal rectangle */
+.row__secondRowPoster {
+  width: 300px;  /* Horizontal rectangular size */
+  height: 150px;  /* Horizontal rectangular height */
+  object-fit: cover;  /* Ensure good image quality */
+  margin-right: 10px;
+  cursor: pointer;  /* Changed cursor to pointer for second-row posters */
+}
+
+.row__secondRowPoster:hover {
+  transform: scale(1.08);
+}
+/* Login container */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background-color: #111; /* Netflix-like dark background */
+  background-image: url('https://i.pinimg.com/736x/19/8b/2f/198b2f01e73b905772279616eccc7c65.jpg'); /* Example movie-like background */
+  background-size: cover; /* Ensures the image covers the whole background */
+  background-position: center center; /* Centers the background image */
+  color: white;
+}
+
+/* Form container */
+.login__form {
+  display: flex;
+  flex-direction: column; /* Stack inputs and buttons vertically */
+  width: 450px; /* Fixed width for the form */
+  background: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
+  padding: 20px; /* Space inside the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Form title */
+.login__form h1 {
+  margin-bottom: 40px;
+  /* Centered title */
+  text-align: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Input fields */
+.login__form input {
+  margin: 10px 0; /* Space between inputs */
+  padding: 10px; /* Inner padding for inputs */
+  border: none; /* No border for clean look */
+  border-radius: 4px; /* Rounded edges for inputs */
+  font-size: 16px; 
+  margin-bottom: 40px;/* Slightly larger font for readability */
+}
+
+/* Button styling */
+.login__form button {
+  padding: 15px;
+  background-color: #e50914; /* Netflix red button color */
+  color: white;
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded edges for button */
+  font-size: 16px; /* Button font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.login__form button:hover {
+  background-color: #f40612; /* Slightly brighter red on hover */
+}
+
+/* Optional: Responsive Design */
+@media (max-width: 400px) {
+  .login__form {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}

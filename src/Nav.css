@@ -1,0 +1,33 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav.scrolled {
+    background-color: rgb(0, 0, 0); /* Semi-transparent black background */
+    
+}
+
+.nav__logo {
+    width: 120px;
+    /* Adjust the width of the logo */
+}
+
+.nav__avatar {
+    width: 60px; /* Adjust the width of the avatar */
+    border-radius: 0%;
+     /* Make the avatar round */
+     transition-duration: 0.2s;
+     cursor: pointer;
+}
+.nav__avatar:hover{
+    transform: scale(1.2);
+}

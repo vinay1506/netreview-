@@ -1,0 +1,118 @@
+.banner {
+    margin-left: -40px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 100px; /* Adjusted padding for better placement */
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("your-image-url"); /* Add your background image URL here */
+    filter: brightness(50%); /* Reduce brightness */
+    opacity: 0.8; /* Adjust opacity for the overall container */
+    border-radius: 10px; /* Rounded corners for modern look */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background image */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Darker overlay to help the text stand out */
+    z-index: 1; /* Ensure the overlay is above the background but below content */
+}
+
+.banner__contents {
+    margin-left: 60px; /* Keeps the content away from the left edge */
+    padding-top: 80px; /* Adjusted padding to center content vertically */
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+    max-width: 800px; /* Restricts content width for readability */
+}
+
+.banner__title {
+    font-size: 3.8rem; /* Slightly smaller for better fit */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase; /* Gives a more Netflix-like look */
+    letter-spacing: 1px; /* Spacing for emphasis */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 2;
+    line-height: 1.1;
+}
+
+.banner__buttons {
+    margin-top: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.banner__button {
+    width: 220px; /* Slightly smaller buttons */
+    cursor: pointer;
+    color: #9f9e9e;
+    background-color: rgba(169, 169, 169, 0.7); /* Slightly more transparent gray */
+    border-radius: 50px; /* Rounded buttons */
+    padding: 0.8rem 2rem; /* Larger padding for better touch targets */
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s; /* Combined transition */
+    border: none; /* Removes border */
+}
+
+.banner__button:hover {
+    background-color: rgba(90, 87, 87, 0.8); /* Red Netflix button hover color */
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+.banner__description {
+    font-size: 1.1rem;
+    width: 80%; /* Adjust width to ensure text doesn't stretch too much */
+    line-height: 1.6; /* Slightly increased line height for readability */
+    margin-top: 1rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+    max-height: 3.2em; /* Ensures text doesn't overflow */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis for long descriptions */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limits to two lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner {
+        height: 400px;
+        padding-top: 80px;
+    }
+
+    .banner__title {
+        font-size: 2.5rem;
+    }
+
+    .banner__description {
+        font-size: 1rem;
+    }
+
+    .banner__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .banner__button {
+        width: 180px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
