@@ -1,22 +1,39 @@
 {
   "name": "netreview",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "ajv": "^8.17.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "description": "A React-based movie review app that fetches movie details from APIs and shows YouTube trailers.",
+  "main": "src/index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "react",
+    "movie",
+    "netflix",
+    "trailers",
+    "youtube",
+    "axios",
+    "api"
+  ],
+  "author": "vinay1506",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.23.0",
+    "react-scripts": "5.0.1",
+    "react-youtube": "^9.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.4.1"
   },
   "eslintConfig": {
     "extends": [
